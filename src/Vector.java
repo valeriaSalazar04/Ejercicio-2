@@ -19,8 +19,8 @@ public class Vector {
       public Vector (){
   } 
       /**
-       * 
-       * @param tamaño 
+       * Contructor de la clase vector parametrizado
+       * @param tamaño: variable que recibe el tamaño del vector para ser creado
        */
       public Vector (int tamaño){
           
@@ -28,9 +28,9 @@ public class Vector {
         
       }
      /**
-      * 
-      * @param i
-      * @param dato 
+      * Método para hacer el cambio en las posiciones del vector
+      * @param i: variable que hace referncia al indice del vector
+      * @param dato: variable que corresponde al  valor que sera asignado en la posición indicada por el indice
       */
      public void set(int i, int dato){
       
@@ -38,13 +38,17 @@ public class Vector {
     }
      /**
       * 
-      * @return 
+      * @return Método que retorna el tamaño del vector
       */
       public int cardinalidad(){
     
         return this.vector.length;
     
     }
+      /**
+       * 
+       * @return Método que retona la cadena de caracteres del vector
+       */
        public String toString(){
     
         String msg="";
@@ -52,7 +56,11 @@ public class Vector {
             msg+=dato+",";
         return(msg);
     }
-       
+       /**
+        * Método que obtiene el dato en la posicion indicada
+        * @param i: variable de tipo entero que representa el indice de posición del vector
+        * @return: retorna el dato en la posicion indicada del vector
+        */
        public int get(int i){
        
         return this.vector[i];
